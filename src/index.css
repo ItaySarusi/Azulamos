@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,16 +17,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 266 30% 54%;
+    --primary: 336 100% 71%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 50 100% 50%;
+    --secondary: 210 100% 76%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 266 30% 54%;
+    --accent: 336 100% 71%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -33,7 +34,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 266 30% 54%;
+    --ring: 336 100% 71%;
 
     --radius: 0.5rem;
 
@@ -53,6 +54,7 @@
 
   body {
     @apply bg-background text-foreground font-sans;
+    direction: rtl; /* Set right-to-left direction for Hebrew */
   }
 
   .btn-primary {
@@ -60,7 +62,7 @@
   }
 
   .btn-secondary {
-    @apply bg-yellow-primary hover:bg-yellow-dark text-azul-dark font-semibold py-3 px-6 rounded-md transition-all duration-300 inline-flex items-center gap-2;
+    @apply bg-yellow-primary hover:bg-yellow-dark text-white font-semibold py-3 px-6 rounded-md transition-all duration-300 inline-flex items-center gap-2;
   }
 
   .section-heading {
@@ -78,4 +80,18 @@
   .section-padding {
     @apply py-16 md:py-24;
   }
+
+  /* Animation classes */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 4s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+  }
 }
+

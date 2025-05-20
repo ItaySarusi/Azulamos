@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -54,14 +53,14 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				azul: {
-					primary: '#7E69AB',
-					secondary: '#6E59A5',
-					dark: '#4A3B7F',
+					primary: '#FF6B9D',
+					secondary: '#FF4B8B',
+					dark: '#E63E7B',
 				},
 				yellow: {
-					light: '#FEF7CD',
-					primary: '#FFD700',
-					dark: '#E6C200',
+					light: '#D3E4FD',
+					primary: '#83C3FF',
+					dark: '#4A9EFF',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -113,13 +112,40 @@ export default {
 					'100%': {
 						transform: 'translateX(0)'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'pulse-slow': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.7'
+					}
+				},
+				'spin-slow': {
+					'from': {
+						transform: 'rotate(0deg)'
+					},
+					'to': {
+						transform: 'rotate(360deg)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
-				'slide-in': 'slide-in 0.5s ease-out'
+				'slide-in': 'slide-in 0.5s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-slow': 'pulse-slow 4s ease-in-out infinite',
+				'spin-slow': 'spin-slow 10s linear infinite'
 			},
 			fontFamily: {
 				'sans': ['Poppins', 'sans-serif'],

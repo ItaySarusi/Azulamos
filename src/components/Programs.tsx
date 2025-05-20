@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Scissors, Clock, Calendar, User, ArrowRight } from 'lucide-react';
+import { Scissors, Clock, Calendar, User, ArrowLeft } from 'lucide-react';
 
 const ProgramCard = ({ 
   title, 
@@ -14,7 +14,7 @@ const ProgramCard = ({
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden card-hover">
       <div className={`${color} p-4 flex justify-center`}>
-        <Icon className="h-12 w-12 text-white" />
+        <Icon className="h-12 w-12 text-white animate-spin-slow" />
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold text-azul-dark mb-3 font-display">{title}</h3>
@@ -37,9 +37,10 @@ const ProgramCard = ({
         
         <a 
           href="#contact" 
-          className="mt-6 block text-center text-azul-primary hover:text-azul-dark font-medium border border-azul-primary hover:border-azul-dark rounded-md py-2 transition-colors duration-300"
+          className="mt-6 block text-center text-azul-primary hover:text-azul-dark font-medium border border-azul-primary hover:border-azul-dark rounded-md py-2 transition-colors duration-300 group"
         >
-          Learn More
+          למד עוד
+          <span className="inline-block transition-transform group-hover:translate-x-1">←</span>
         </a>
       </div>
     </div>
@@ -51,48 +52,48 @@ const Programs = () => {
     <section id="programs" className="section-padding bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="section-heading">Our Programs</h2>
+          <h2 className="section-heading">התוכניות שלנו</h2>
           <p className="section-subheading">
-            We offer specialized barbering programs designed for different age groups and skill levels
+            אנו מציעים תוכניות ספרות מיוחדות המיועדות לקבוצות גיל ורמות מיומנות שונות
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ProgramCard 
-            title="Junior Barber Basics"
-            description="Perfect introduction for kids interested in learning the fundamentals of barbering. Focuses on safety, tool handling, and basic techniques."
+            title="יסודות ספרות לצעירים"
+            description="הקדמה מושלמת לילדים המעוניינים ללמוד את יסודות הספרות. מתמקד בבטיחות, טיפול בכלים וטכניקות בסיסיות."
             icon={Scissors}
-            duration="8 Weeks (Weekends)"
-            ageGroup="Ages 10-13"
-            startDate="New classes monthly"
+            duration="8 שבועות (סופי שבוע)"
+            ageGroup="גילאי 10-13"
+            startDate="כיתות חדשות כל חודש"
             color="bg-azul-primary"
           />
           
           <ProgramCard 
-            title="Teen Styling Academy"
-            description="Intermediate program teaching trending haircut styles, clipper techniques, and customer service skills for teenagers."
+            title="אקדמיית עיצוב לנוער"
+            description="תוכנית בינונית המלמדת סגנונות תספורת מגמתיים, טכניקות מכונת תספורת ומיומנויות שירות לקוחות לבני נוער."
             icon={Scissors}
-            duration="12 Weeks (After School)"
-            ageGroup="Ages 14-17"
-            startDate="September & January"
+            duration="12 שבועות (אחרי בית הספר)"
+            ageGroup="גילאי 14-17"
+            startDate="ספטמבר וינואר"
             color="bg-yellow-primary"
           />
           
           <ProgramCard 
-            title="Advanced Techniques"
-            description="For committed young barbers who want to develop advanced skills including designs, fades, and specialized techniques."
+            title="טכניקות מתקדמות"
+            description="לספרים צעירים מחויבים שרוצים לפתח מיומנויות מתקדמות כולל עיצובים, פיידים וטכניקות מיוחדות."
             icon={Scissors}
-            duration="16 Weeks (Intensive)"
-            ageGroup="Ages 15-18"
-            startDate="Quarterly Enrollment"
+            duration="16 שבועות (אינטנסיבי)"
+            ageGroup="גילאי 15-18"
+            startDate="הרשמה רבעונית"
             color="bg-azul-dark"
           />
         </div>
         
         <div className="mt-16 text-center">
           <a href="#contact" className="btn-primary">
-            Ask About Our Programs
-            <ArrowRight className="h-5 w-5" />
+            שאל על התוכניות שלנו
+            <ArrowLeft className="h-5 w-5" />
           </a>
         </div>
       </div>
