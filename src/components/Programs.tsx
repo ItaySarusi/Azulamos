@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Scissors, Clock, Calendar, User } from 'lucide-react';
+import { Scissors, Clock, Calendar, User, ArrowRight } from 'lucide-react';
 
 const ProgramCard = ({ 
   title, 
