@@ -5,7 +5,7 @@ import { ArrowLeft } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center" style={{
-      background: `linear-gradient(rgba(255, 107, 157, 0.85), rgba(255, 107, 157, 0.95)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80')`,
+      background: `linear-gradient(rgba(255, 107, 157, 0.65), rgba(255, 107, 157, 0.75)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }}>

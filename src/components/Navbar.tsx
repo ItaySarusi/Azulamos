@@ -32,17 +32,17 @@ const Navbar = () => {
           <div className="flex items-center">
             <Scissors className="h-8 w-8 text-azul-primary" />
             <span className="ml-2 text-2xl font-bold font-display text-azul-primary">
-              Azulamos
+              אזולמוס
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#programs" className="text-gray-700 hover:text-azul-primary font-medium">Programs</a>
-            <a href="#why-us" className="text-gray-700 hover:text-azul-primary font-medium">Why Choose Us</a>
-            <a href="#instructors" className="text-gray-700 hover:text-azul-primary font-medium">Our Team</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-azul-primary font-medium">Testimonials</a>
-            <a href="#contact" className="btn-primary">Contact Us</a>
+            <a href="#programs" className="text-gray-700 hover:text-azul-primary font-medium">תוכניות</a>
+            <a href="#why-us" className="text-gray-700 hover:text-azul-primary font-medium">למה אנחנו</a>
+            <a href="#instructors" className="text-gray-700 hover:text-azul-primary font-medium">הצוות שלנו</a>
+            <a href="#testimonials" className="text-gray-700 hover:text-azul-primary font-medium">המלצות</a>
+            <a href="#contact" className="btn-primary">צור קשר</a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -69,11 +69,11 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-white mt-4 py-4 px-2 rounded-lg shadow-lg animate-fade-in">
-            <a href="#programs" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">Programs</a>
-            <a href="#why-us" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">Why Choose Us</a>
-            <a href="#instructors" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">Our Team</a>
-            <a href="#testimonials" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">Testimonials</a>
-            <a href="#contact" className="block py-2 px-4 mt-2 bg-azul-primary text-white text-center rounded-md">Contact Us</a>
+            <a href="#programs" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">תוכניות</a>
+            <a href="#why-us" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">למה אנחנו</a>
+            <a href="#instructors" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">הצוות שלנו</a>
+            <a href="#testimonials" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">המלצות</a>
+            <a href="#contact" className="block py-2 px-4 mt-2 bg-azul-primary text-white text-center rounded-md">צור קשר</a>
           </div>
         )}
       </div>

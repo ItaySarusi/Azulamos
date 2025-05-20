@@ -9,31 +9,31 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <Scissors className="h-6 w-6 text-yellow-primary" />
-              <span className="ml-2 text-xl font-bold font-display">Azulamos</span>
+              <Scissors className="h-6 w-6 text-yellow-primary ml-2" />
+              <span className="text-xl font-bold font-display">אזולמוס</span>
             </div>
             <p className="mb-4 text-gray-300">
-              Empowering the next generation of barbers through fun, educational, and hands-on programs designed specifically for kids.
+              מעצימים את הדור הבא של ספרים באמצעות תוכניות מהנות, חינוכיות ומעשיות המותאמות במיוחד לילדים.
             </p>
             <div className="flex space-x-4">
               <a 
                 href="#" 
                 className="text-gray-300 hover:text-yellow-primary transition-colors"
-                aria-label="Instagram"
+                aria-label="אינסטגרם"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
                 href="#" 
                 className="text-gray-300 hover:text-yellow-primary transition-colors"
-                aria-label="Facebook"
+                aria-label="פייסבוק"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a 
                 href="#" 
                 className="text-gray-300 hover:text-yellow-primary transition-colors"
-                aria-label="Twitter"
+                aria-label="טוויטר"
               >
                 <Twitter className="h-5 w-5" />
               </a>
@@ -41,40 +41,40 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4 font-display">Programs</h3>
+            <h3 className="text-lg font-bold mb-4 font-display">תוכניות</h3>
             <ul className="space-y-3">
-              <li><a href="#programs" className="text-gray-300 hover:text-yellow-primary transition-colors">Junior Barber Basics</a></li>
-              <li><a href="#programs" className="text-gray-300 hover:text-yellow-primary transition-colors">Teen Styling Academy</a></li>
-              <li><a href="#programs" className="text-gray-300 hover:text-yellow-primary transition-colors">Advanced Techniques</a></li>
-              <li><a href="#programs" className="text-gray-300 hover:text-yellow-primary transition-colors">Summer Camps</a></li>
+              <li><a href="#programs" className="text-gray-300 hover:text-yellow-primary transition-colors">יסודות ספרות לצעירים</a></li>
+              <li><a href="#programs" className="text-gray-300 hover:text-yellow-primary transition-colors">אקדמיית עיצוב לנוער</a></li>
+              <li><a href="#programs" className="text-gray-300 hover:text-yellow-primary transition-colors">טכניקות מתקדמות</a></li>
+              <li><a href="#programs" className="text-gray-300 hover:text-yellow-primary transition-colors">מחנות קיץ</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4 font-display">About Us</h3>
+            <h3 className="text-lg font-bold mb-4 font-display">עלינו</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-yellow-primary transition-colors">Our Story</a></li>
-              <li><a href="#instructors" className="text-gray-300 hover:text-yellow-primary transition-colors">Our Team</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-yellow-primary transition-colors">Careers</a></li>
-              <li><a href="#testimonials" className="text-gray-300 hover:text-yellow-primary transition-colors">Testimonials</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-yellow-primary transition-colors">הסיפור שלנו</a></li>
+              <li><a href="#instructors" className="text-gray-300 hover:text-yellow-primary transition-colors">הצוות שלנו</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-yellow-primary transition-colors">קריירה</a></li>
+              <li><a href="#testimonials" className="text-gray-300 hover:text-yellow-primary transition-colors">המלצות</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4 font-display">Contact</h3>
+            <h3 className="text-lg font-bold mb-4 font-display">צור קשר</h3>
             <ul className="space-y-3">
-              <li className="text-gray-300">123 Barber Street, Suite 101<br />Los Angeles, CA 90001</li>
-              <li><a href="tel:5551234567" className="text-gray-300 hover:text-yellow-primary transition-colors">(555) 123-4567</a></li>
+              <li className="text-gray-300">רחוב הספרים 123, דירה 101<br />תל אביב, ישראל</li>
+              <li><a href="tel:03-123-4567" className="text-gray-300 hover:text-yellow-primary transition-colors">03-123-4567</a></li>
               <li><a href="mailto:info@azulamos.com" className="text-gray-300 hover:text-yellow-primary transition-colors">info@azulamos.com</a></li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} Azulamos. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} אזולמוס. כל הזכויות שמורות.</p>
           <p className="mt-2">
-            <a href="#" className="hover:text-yellow-primary transition-colors">Privacy Policy</a> | 
-            <a href="#" className="hover:text-yellow-primary transition-colors ml-2">Terms of Service</a>
+            <a href="#" className="hover:text-yellow-primary transition-colors">מדיניות פרטיות</a> | 
+            <a href="#" className="hover:text-yellow-primary transition-colors mr-2">תנאי שימוש</a>
           </p>
         </div>
       </div>

@@ -22,15 +22,15 @@ const ProgramCard = ({
         
         <div className="border-t border-gray-100 pt-4 mt-4">
           <div className="flex items-center text-sm text-gray-500 mb-2">
-            <Clock className="h-4 w-4 mr-2" />
+            <Clock className="h-4 w-4 ml-2" />
             <span>{duration}</span>
           </div>
           <div className="flex items-center text-sm text-gray-500 mb-2">
-            <User className="h-4 w-4 mr-2" />
+            <User className="h-4 w-4 ml-2" />
             <span>{ageGroup}</span>
           </div>
           <div className="flex items-center text-sm text-gray-500">
-            <Calendar className="h-4 w-4 mr-2" />
+            <Calendar className="h-4 w-4 ml-2" />
             <span>{startDate}</span>
           </div>
         </div>
@@ -40,7 +40,7 @@ const ProgramCard = ({
           className="mt-6 block text-center text-azul-primary hover:text-azul-dark font-medium border border-azul-primary hover:border-azul-dark rounded-md py-2 transition-colors duration-300 group"
         >
           למד עוד
-          <span className="inline-block transition-transform group-hover:translate-x-1">←</span>
+          <span className="inline-block transition-transform group-hover:translate-x-1 mr-1">←</span>
         </a>
       </div>
     </div>
@@ -93,7 +93,7 @@ const Programs = () => {
         <div className="mt-16 text-center">
           <a href="#contact" className="btn-primary">
             שאל על התוכניות שלנו
-            <ArrowLeft className="h-5 w-5" />
+            <ArrowLeft className="h-5 w-5 mr-1" />
           </a>
         </div>
       </div>
