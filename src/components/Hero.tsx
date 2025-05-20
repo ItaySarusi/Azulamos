@@ -1,11 +1,11 @@
-
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
+import heroBackground from '../assets/images/hero.avif';
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center" style={{
-      background: `linear-gradient(rgba(255, 107, 157, 0.65), rgba(255, 107, 157, 0.75)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80')`,
+      background: `linear-gradient(rgba(255, 107, 157, 0.65), rgba(255, 107, 157, 0.75)), url(${heroBackground})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }}>

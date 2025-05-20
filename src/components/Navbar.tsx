@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Scissors } from 'lucide-react';
@@ -37,11 +36,11 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#programs" className="text-gray-700 hover:text-azul-primary font-medium">תוכניות</a>
-            <a href="#why-us" className="text-gray-700 hover:text-azul-primary font-medium">למה אנחנו</a>
-            <a href="#instructors" className="text-gray-700 hover:text-azul-primary font-medium">הצוות שלנו</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-azul-primary font-medium">המלצות</a>
+          <div className="hidden md:flex items-center space-x-reverse-8">
+            <a href="#programs" className="text-gray-700 hover:text-azul-primary font-medium ml-8">תוכניות</a>
+            <a href="#why-us" className="text-gray-700 hover:text-azul-primary font-medium ml-8">למה אנחנו</a>
+            <a href="#instructors" className="text-gray-700 hover:text-azul-primary font-medium ml-8">הצוות שלנו</a>
+            <a href="#testimonials" className="text-gray-700 hover:text-azul-primary font-medium ml-8">המלצות</a>
             <a href="#contact" className="btn-primary">צור קשר</a>
           </div>
 
