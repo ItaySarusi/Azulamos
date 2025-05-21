@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import emailjs from '@emailjs/browser';
+import { MessageCircle } from 'lucide-react';
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -23,45 +25,50 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Format the message for WhatsApp
-    const whatsappMessage = `הודעה חדשה מהאתר:
-    
-שם: ${formData.name}
-דוא״ל: ${formData.email}
-טלפון: ${formData.phone}
-גיל הילד/ה: ${formData.childAge}
+    try {
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone,
+          child_age: formData.childAge,
+          message: formData.message,
+        },
+        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+      );
 
-הודעה:
-${formData.message}`;
+      toast({
+        title: "ההודעה נשלחה!",
+        description: "קיבלנו את פנייתך ונחזור אליך בהקדם.",
+      });
+      
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        childAge: '',
+        message: ''
+      });
+    } catch (error) {
+      toast({
+        title: "שגיאה",
+        description: "אירעה שגיאה בשליחת ההודעה. אנא נסה שוב.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
-    // Encode the message for URL
-    const encodedMessage = encodeURIComponent(whatsappMessage);
-    
-    // Create WhatsApp URL (replace with the actual phone number)
-    const whatsappUrl = `https://wa.me/972501234567?text=${encodedMessage}`;
-    
-    // Open WhatsApp in a new tab
+  const handleWhatsApp = () => {
+    const whatsappUrl = `https://wa.me/972536218403`; // Replace with actual number
     window.open(whatsappUrl, '_blank');
-    
-    // Show success message
-    toast({
-      title: "ההודעה נשלחה!",
-      description: "פתחנו את וואטסאפ עבורך עם כל הפרטים.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      childAge: '',
-      message: ''
-    });
-    setIsSubmitting(false);
   };
 
   return (
@@ -188,13 +195,24 @@ ${formData.message}`;
                 />
               </div>
               
-              <Button 
-                type="submit" 
-                className="w-full bg-azul-primary hover:bg-azul-dark text-white font-semibold py-3"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? "שולח..." : "שלח הודעה"}
-              </Button>
+              <div className="space-y-4">
+                <Button 
+                  type="submit" 
+                  className="w-full bg-azul-primary hover:bg-azul-dark text-white font-semibold py-3"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "שולח..." : "שליחת טופס"}
+                </Button>
+                
+                <Button 
+                  type="button"
+                  onClick={handleWhatsApp}
+                  className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 flex items-center justify-center gap-2"
+                >
+                  <MessageCircle className="h-5 w-5" />
+                  שלח הודעה עכשיו
+                </Button>
+              </div>
             </form>
           </div>
         </div>
