@@ -20,7 +20,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <a href="#programs" className="btn-secondary">
-                גלה תוכניות
+                התוכניות שלנו
                 <ArrowLeft className="h-5 w-5" />
               </a>
               <a href="#contact" className="text-white border-2 border-white hover:bg-white hover:text-azul-primary font-semibold py-3 px-6 rounded-md transition-all duration-300 text-center">
