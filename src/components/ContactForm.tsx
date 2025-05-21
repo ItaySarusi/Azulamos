@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -52,7 +51,7 @@ const ContactForm = () => {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-display">מוכנים להתחיל?</h2>
             <p className="text-lg mb-8 opacity-90">
-              צרו קשר עוד היום כדי ללמוד עוד על התוכניות שלנו או לתאם סיור במתקן שלנו. אנחנו נרגשים לקבל את הילד שלכם למשפחת אזולמוס!
+              צרו קשר עוד היום כדי ללמוד עוד על התוכניות שלנו או לתאם סיור במתקן שלנו. אנחנו נרגשים לקבל את הילד שלכם למשפחת Pink Barber!
             </p>
             
             <div className="bg-azul-dark rounded-lg p-6 mb-8">
@@ -75,7 +74,7 @@ const ContactForm = () => {
                   <svg className="h-6 w-6 ml-3 mt-1 text-yellow-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <span>info@azulamos.com</span>
+                  <span>info@pinkbarber.com</span>
                 </p>
               </div>
             </div>

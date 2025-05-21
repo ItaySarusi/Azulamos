@@ -13,10 +13,10 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-white mb-10 md:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 animate-fade-in animate-float">
-              עיצוב הדור הבא של ספרים
+              עיצוב הדור הבא של הספרים
             </h1>
             <p className="text-lg md:text-xl mb-8 text-yellow-light opacity-90 max-w-lg animate-fade-in animate-pulse-slow" style={{ animationDelay: '0.2s' }}>
-              באזולמוס, אנו מלמדים ילדים את אמנות ומיומנות הספרות באווירה מהנה ותומכת. הפוך תשוקה למקצוע מגיל צעיר.
+              בPink Barber, אנו מלמדים ילדים את אמנות ומיומנות הספרות באווירה מהנה ותומכת. בוא תהפוך את החלום שלך למקצוע.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <a href="#programs" className="btn-secondary">
@@ -39,13 +39,13 @@ const Hero = () => {
                     <svg className="h-5 w-5 text-azul-primary mr-2 animate-spin-slow" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    למד יסודות הספרות
+                    יסודות הספרות
                   </li>
                   <li className="flex items-center text-gray-700">
                     <svg className="h-5 w-5 text-azul-primary mr-2 animate-spin-slow" style={{ animationDelay: '0.3s' }} fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    התאמן על בובות מציאותיות
+                    התאמנות על בובות מציאותיות
                   </li>
                   <li className="flex items-center text-gray-700">
                     <svg className="h-5 w-5 text-azul-primary mr-2 animate-spin-slow" style={{ animationDelay: '0.6s' }} fill="currentColor" viewBox="0 0 20 20">
@@ -55,7 +55,7 @@ const Hero = () => {
                   </li>
                 </ul>
                 <a href="#contact" className="btn-primary w-full justify-center group">
-                  שמור את מקומך
+                  שמור מקום
                   <span className="transform group-hover:scale-125 transition-transform duration-300">🔍</span>
                 </a>
               </div>

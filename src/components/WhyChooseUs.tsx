@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
@@ -21,7 +20,7 @@ const WhyChooseUs = () => {
     }}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="section-heading">למה לבחור באזולמוס</h2>
+          <h2 className="section-heading">למה לבחור בPink Barber</h2>
           <p className="section-subheading">
             אנחנו לא רק מלמדים מיומנות - אנחנו בונים ביטחון, יצירתיות ומקצועיות עתידית
           </p>

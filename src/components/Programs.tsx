@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Scissors, Clock, Calendar, User, ArrowLeft } from 'lucide-react';
 
@@ -52,7 +51,7 @@ const Programs = () => {
     <section id="programs" className="section-padding bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="section-heading">התוכניות שלנו</h2>
+          <h2 className="section-heading">התוכנית שלנו</h2>
           <p className="section-subheading">
             אנו מציעים תוכניות ספרות מיוחדות המיועדות לקבוצות גיל ורמות מיומנות שונות
           </p>

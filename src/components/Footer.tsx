@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Scissors, Instagram, Facebook, Twitter } from 'lucide-react';
 
@@ -10,7 +9,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <Scissors className="h-6 w-6 text-yellow-primary ml-2" />
-              <span className="text-xl font-bold font-display">אזולמוס</span>
+              <span className="text-xl font-bold font-display">Pink Barber</span>
             </div>
             <p className="mb-4 text-gray-300">
               מעצימים את הדור הבא של ספרים באמצעות תוכניות מהנות, חינוכיות ומעשיות המותאמות במיוחד לילדים.
@@ -65,13 +64,13 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="text-gray-300">רחוב הספרים 123, דירה 101<br />תל אביב, ישראל</li>
               <li><a href="tel:03-123-4567" className="text-gray-300 hover:text-yellow-primary transition-colors">03-123-4567</a></li>
-              <li><a href="mailto:info@azulamos.com" className="text-gray-300 hover:text-yellow-primary transition-colors">info@azulamos.com</a></li>
+              <li><a href="mailto:info@pinkbarber.com" className="text-gray-300 hover:text-yellow-primary transition-colors">info@pinkbarber.com</a></li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} אזולמוס. כל הזכויות שמורות.</p>
+          <p>&copy; {new Date().getFullYear()} Pink Barber. כל הזכויות שמורות.</p>
           <p className="mt-2">
             <a href="#" className="hover:text-yellow-primary transition-colors">מדיניות פרטיות</a> | 
             <a href="#" className="hover:text-yellow-primary transition-colors mr-2">תנאי שימוש</a>
