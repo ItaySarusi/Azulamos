@@ -51,7 +51,7 @@ const ContactForm = () => {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-display">מוכנים להתחיל?</h2>
             <p className="text-lg mb-8 opacity-90">
-              צרו קשר עוד היום כדי ללמוד עוד על התוכניות שלנו או לתאם סיור במתקן שלנו. אנחנו נרגשים לקבל את הילד שלכם למשפחת Pink Barber!
+              צרו קשר עוד היום כדי ללמוד עוד על התוכניות שלנו או לתאם סיור במתקן שלנו. אנחנו נרגשים לקבל את הילד שלכם למשפחת פינק ברבר!
             </p>
             
             <div className="bg-azul-dark rounded-lg p-6 mb-8">

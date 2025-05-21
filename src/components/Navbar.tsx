@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Scissors className="h-8 w-8 text-azul-primary" />
             <span className="ml-2 text-2xl font-bold font-display text-azul-primary">
-              Pink Barber
+              פינק ברבר
             </span>
           </div>
 
