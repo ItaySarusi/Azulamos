@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const FeatureCard = ({ title, description, number }) => {
   return (
@@ -28,14 +28,14 @@ const WhyChooseUs = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           <FeatureCard 
-            title="תוכנית לימודים ממוקדת לילדים"
+            title="תוכנית לימודים ממוקדת לנוער"
             description="התוכניות שלנו מתוכננות במיוחד עבור לומדים צעירים, באמצעות שיטות הוראה וציוד מותאם לגיל."
             number="1"
           />
           
           <FeatureCard 
             title="ציוד מקצועי"
-            description="התלמידים מתאמנים עם כלי ספרות אמיתיים, איכותיים בסביבה מבוקרת ובטוחה עם פיקוח נאות."
+            description="התלמידים מתאמנים עם כלי ספרות אמיתיים, איכותיים בסביבה מבוקרת ובטוחה עם פיקוח ובקרה מקצועית."
             number="2"
           />
           
@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
           
           <FeatureCard 
             title="הזדמנויות עתידיות"
-            description="התלמידים רוכשים מיומנויות חשובות שיכולות להוביל לפיתוח תחביב, עבודה במהלך הלימודים או מסלולי קריירה עתידיים."
+            description="התלמידים רוכשים מיומנויות חשובות שיכולות להוביל לפיתוח תחביב, עבודה במהלך הלימודים או מסלולי קריירה עתידיים, אפילו במספרה שלנו."
             number="6"
           />
         </div>
@@ -67,11 +67,12 @@ const WhyChooseUs = () => {
         <div className="mt-16 bg-azul-primary rounded-xl p-8 md:p-10 text-white text-center">
           <h3 className="text-2xl md:text-3xl font-bold mb-4 font-display">מוכנים להתחיל את מסע הספרות של ילדכם?</h3>
           <p className="mb-6 text-lg opacity-90 max-w-2xl mx-auto">
-            התוכניות שלנו מתמלאות במהירות. צרו קשר עוד היום כדי לתאם סיור במתקן שלנו וללמוד עוד על תהליך ההרשמה.
+            התוכניות שלנו מתמלאות במהירות.<br />
+            צרו קשר עוד היום כדי לתאם סיור במתקן שלנו וללמוד עוד על תהליך ההרשמה.
           </p>
           <a href="#contact" className="btn-secondary">
             התחילו עוד היום
-            <ArrowRight className="h-5 w-5 mr-1" />
+            <ArrowLeft className="h-5 w-5 mr-1" />
           </a>
         </div>
       </div>
