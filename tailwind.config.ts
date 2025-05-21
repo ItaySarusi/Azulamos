@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import animate from "tailwindcss-animate";
 
 export default {
 	darkMode: ["class"],
@@ -62,14 +63,20 @@ export default {
 					dark: 'hsl(var(--card-dark))',
 				},
 				azul: {
-					primary: '#FF6B9D',
-					secondary: '#FF4B8B',
-					dark: '#E63E7B',
+					primary: 'hsl(var(--azul-primary))',
+					'primary-dark': 'hsl(var(--azul-primary-dark))',
+					secondary: 'hsl(var(--azul-secondary))',
+					'secondary-dark': 'hsl(var(--azul-secondary-dark))',
+					dark: 'hsl(var(--azul-dark))',
+					'dark-dark': 'hsl(var(--azul-dark-dark))',
 				},
 				yellow: {
-					light: '#D3E4FD',
-					primary: '#83C3FF',
-					dark: '#4A9EFF',
+					light: 'hsl(var(--yellow-light))',
+					'light-dark': 'hsl(var(--yellow-light-dark))',
+					primary: 'hsl(var(--yellow-primary))',
+					'primary-dark': 'hsl(var(--yellow-primary-dark))',
+					dark: 'hsl(var(--yellow-dark))',
+					'dark-dark': 'hsl(var(--yellow-dark-dark))',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -162,5 +169,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [animate],
 } satisfies Config;

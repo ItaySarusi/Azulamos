@@ -8,12 +8,12 @@ const ProgramCard = ({
   duration, 
   ageGroup, 
   startDate, 
-  color = "bg-azul-primary"
+  color = "bg-azul-primary dark:bg-azul-primary-dark"
 }) => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden card-hover">
       <div className={`${color} p-4 flex justify-center`}>
-        <Icon className="h-12 w-12 text-white dark:text-gray-800 animate-spin-slow" />
+        <Icon className="h-12 w-12 text-white dark:text-gray-100 animate-spin-slow" />
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold text-azul-dark dark:text-white mb-3 font-display">{title}</h3>
@@ -36,7 +36,7 @@ const ProgramCard = ({
         
         <a 
           href="#contact" 
-          className="mt-6 block text-center text-azul-primary hover:text-azul-dark dark:text-azul-secondary dark:hover:text-azul-primary font-medium border border-azul-primary hover:border-azul-dark dark:border-azul-secondary dark:hover:border-azul-primary rounded-md py-2 transition-colors duration-300 group"
+          className="mt-6 block text-center text-azul-primary hover:text-azul-dark dark:text-azul-primary-dark dark:hover:text-azul-dark-dark font-medium border border-azul-primary hover:border-azul-dark dark:border-azul-primary-dark dark:hover:border-azul-dark-dark rounded-md py-2 transition-colors duration-300 group"
         >
           למד עוד
           <span className="inline-block transition-transform group-hover:translate-x-1 mr-1">←</span>
@@ -65,7 +65,7 @@ const Programs = () => {
             duration="8 שבועות (סופי שבוע)"
             ageGroup="גילאי 10-13"
             startDate="כיתות חדשות כל חודש"
-            color="bg-azul-primary"
+            color="bg-azul-primary dark:bg-azul-primary-dark"
           />
           
           <ProgramCard 
@@ -75,7 +75,7 @@ const Programs = () => {
             duration="12 שבועות (אחרי בית הספר)"
             ageGroup="גילאי 14-17"
             startDate="ספטמבר וינואר"
-            color="bg-yellow-primary"
+            color="bg-yellow-primary dark:bg-yellow-primary-dark"
           />
           
           <ProgramCard 
@@ -85,12 +85,12 @@ const Programs = () => {
             duration="16 שבועות (אינטנסיבי)"
             ageGroup="גילאי 15-18"
             startDate="הרשמה רבעונית"
-            color="bg-azul-dark"
+            color="bg-azul-dark dark:bg-azul-dark-dark"
           />
         </div>
         
         <div className="mt-16 text-center">
-          <a href="#contact" className="btn-primary dark:bg-azul-primary dark:text-white dark:hover:bg-azul-dark">
+          <a href="#contact" className="btn-primary dark:bg-azul-primary-dark dark:hover:bg-azul-dark-dark">
             שאל על התוכניות שלנו
             <ArrowLeft className="h-5 w-5 mr-1" />
           </a>

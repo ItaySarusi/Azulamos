@@ -53,6 +53,20 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --azul-primary: 346.8 100% 70.8%;
+    --azul-primary-dark: 346.8 85% 65%;
+    --azul-secondary: 346.8 100% 65%;
+    --azul-secondary-dark: 346.8 85% 60%;
+    --azul-dark: 346.8 100% 60%;
+    --azul-dark-dark: 346.8 85% 55%;
+
+    --yellow-light: 213.8 90% 91%;
+    --yellow-light-dark: 213.8 70% 86%;
+    --yellow-primary: 213.8 100% 75.7%;
+    --yellow-primary-dark: 213.8 85% 70.7%;
+    --yellow-dark: 213.8 100% 65%;
+    --yellow-dark-dark: 213.8 85% 60%;
   }
 
   .dark {
@@ -73,20 +87,20 @@
   }
 
   * {
-    @apply border-border;
+    @apply border-border transition-colors duration-200;
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans transition-colors duration-200;
     direction: rtl; /* Set right-to-left direction for Hebrew */
   }
 
   .btn-primary {
-    @apply bg-azul-primary hover:bg-azul-dark text-white font-semibold py-3 px-6 rounded-md transition-all duration-300 inline-flex items-center gap-2;
+    @apply bg-azul-primary hover:bg-azul-dark text-white font-semibold py-3 px-6 rounded-md transition-all duration-300 inline-flex items-center gap-2 dark:bg-azul-primary-dark dark:hover:bg-azul-dark-dark;
   }
 
   .btn-secondary {
-    @apply bg-yellow-primary hover:bg-yellow-dark text-white font-semibold py-3 px-6 rounded-md transition-all duration-300 inline-flex items-center gap-2;
+    @apply bg-yellow-primary hover:bg-yellow-dark text-white font-semibold py-3 px-6 rounded-md transition-all duration-300 inline-flex items-center gap-2 dark:bg-yellow-primary-dark dark:hover:bg-yellow-dark-dark;
   }
 
   .section-heading {
