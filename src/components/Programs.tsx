@@ -11,24 +11,24 @@ const ProgramCard = ({
   color = "bg-azul-primary"
 }) => {
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden card-hover">
       <div className={`${color} p-4 flex justify-center`}>
-        <Icon className="h-12 w-12 text-white animate-spin-slow" />
+        <Icon className="h-12 w-12 text-white dark:text-gray-800 animate-spin-slow" />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-bold text-azul-dark mb-3 font-display">{title}</h3>
-        <p className="text-gray-600 mb-4">{description}</p>
+        <h3 className="text-xl font-bold text-azul-dark dark:text-white mb-3 font-display">{title}</h3>
+        <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
         
-        <div className="border-t border-gray-100 pt-4 mt-4">
-          <div className="flex items-center text-sm text-gray-500 mb-2">
+        <div className="border-t border-gray-100 dark:border-gray-700 pt-4 mt-4">
+          <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
             <Clock className="h-4 w-4 ml-2" />
             <span>{duration}</span>
           </div>
-          <div className="flex items-center text-sm text-gray-500 mb-2">
+          <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
             <User className="h-4 w-4 ml-2" />
             <span>{ageGroup}</span>
           </div>
-          <div className="flex items-center text-sm text-gray-500">
+          <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
             <Calendar className="h-4 w-4 ml-2" />
             <span>{startDate}</span>
           </div>
@@ -36,7 +36,7 @@ const ProgramCard = ({
         
         <a 
           href="#contact" 
-          className="mt-6 block text-center text-azul-primary hover:text-azul-dark font-medium border border-azul-primary hover:border-azul-dark rounded-md py-2 transition-colors duration-300 group"
+          className="mt-6 block text-center text-azul-primary hover:text-azul-dark dark:text-azul-secondary dark:hover:text-azul-primary font-medium border border-azul-primary hover:border-azul-dark dark:border-azul-secondary dark:hover:border-azul-primary rounded-md py-2 transition-colors duration-300 group"
         >
           למד עוד
           <span className="inline-block transition-transform group-hover:translate-x-1 mr-1">←</span>
@@ -48,11 +48,11 @@ const ProgramCard = ({
 
 const Programs = () => {
   return (
-    <section id="programs" className="section-padding bg-gray-50">
+    <section id="programs" className="section-padding bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="section-heading">התוכנית שלנו</h2>
-          <p className="section-subheading">
+          <h2 className="section-heading dark:text-white">התוכנית שלנו</h2>
+          <p className="section-subheading dark:text-gray-300">
             בחירה בין תוכניות ספרות מיוחדות המיועדות לקבוצות גיל ורמות מיומנות שונות
           </p>
         </div>
@@ -90,7 +90,7 @@ const Programs = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <a href="#contact" className="btn-primary">
+          <a href="#contact" className="btn-primary dark:bg-azul-primary dark:text-white dark:hover:bg-azul-dark">
             שאל על התוכניות שלנו
             <ArrowLeft className="h-5 w-5 mr-1" />
           </a>

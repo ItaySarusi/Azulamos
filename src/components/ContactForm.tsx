@@ -72,7 +72,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-azul-primary text-white">
+    <section id="contact" className="section-padding bg-azul-primary dark:bg-azul-dark text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -81,7 +81,7 @@ const ContactForm = () => {
               צרו קשר עוד היום כדי ללמוד עוד על התוכניות שלנו או לתאם סיור במתקן שלנו. אנחנו נרגשים לקבל את הילד שלכם למשפחת פינק ברבר!
             </p>
             
-            <div className="bg-azul-dark rounded-lg p-6 mb-8">
+            <div className="bg-azul-dark dark:bg-gray-800 rounded-lg p-6 mb-8">
               <h3 className="text-xl font-bold mb-4 font-display">בקרו בסטודיו שלנו</h3>
               <div className="space-y-3">
                 <p className="flex items-start">
@@ -125,24 +125,24 @@ const ContactForm = () => {
             </div>
           </div>
           
-          <div className="bg-white text-gray-800 rounded-xl p-6 md:p-8 shadow-xl">
-            <h3 className="text-2xl font-bold text-azul-dark mb-6 font-display">שלחו לנו הודעה</h3>
+          <div className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white rounded-xl p-6 md:p-8 shadow-xl">
+            <h3 className="text-2xl font-bold text-azul-dark dark:text-white mb-6 font-display">שלחו לנו הודעה</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">שם מלא</label>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">שם מלא</label>
                 <Input
                   id="name"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full"
+                  className="w-full bg-white dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                   placeholder="ישראל ישראלי"
                 />
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">כתובת דוא״ל</label>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">כתובת דוא״ל</label>
                 <Input
                   id="email"
                   name="email"
@@ -150,46 +150,46 @@ const ContactForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full"
+                  className="w-full bg-white dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                   placeholder="israel@example.com"
                 />
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">מספר טלפון</label>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">מספר טלפון</label>
                   <Input
                     id="phone"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full"
+                    className="w-full bg-white dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                     placeholder="050-123-4567"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="childAge" className="block text-sm font-medium text-gray-700 mb-1">גיל הילד/ה</label>
+                  <label htmlFor="childAge" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">גיל הילד/ה</label>
                   <Input
                     id="childAge"
                     name="childAge"
                     value={formData.childAge}
                     onChange={handleChange}
-                    className="w-full"
+                    className="w-full bg-white dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                     placeholder="12"
                   />
                 </div>
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">ההודעה שלך</label>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">ההודעה שלך</label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="w-full"
+                  className="w-full bg-white dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                   rows={4}
                   placeholder="אני מעוניין/ת לדעת יותר על התוכניות שלכם..."
                 />
@@ -198,7 +198,7 @@ const ContactForm = () => {
               <div className="space-y-4">
                 <Button 
                   type="submit" 
-                  className="w-full bg-azul-primary hover:bg-azul-dark text-white font-semibold py-3"
+                  className="w-full bg-azul-primary hover:bg-azul-dark dark:bg-azul-dark dark:hover:bg-azul-primary text-white font-semibold py-3"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "שולח..." : "שליחת טופס"}
@@ -207,7 +207,7 @@ const ContactForm = () => {
                 <Button 
                   type="button"
                   onClick={handleWhatsApp}
-                  className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 flex items-center justify-center gap-2"
+                  className="w-full bg-green-600 hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-800 text-white font-semibold py-3 flex items-center justify-center gap-2"
                 >
                   <MessageCircle className="h-5 w-5" />
                   שלח הודעה עכשיו

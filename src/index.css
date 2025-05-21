@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap');
 
@@ -9,24 +8,32 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
+    --background-dark: 222.2 84% 4.9%;
     --foreground: 222.2 84% 4.9%;
+    --foreground-dark: 210 40% 98%;
 
     --card: 0 0% 100%;
+    --card-dark: 222.2 84% 4.9%;
     --card-foreground: 222.2 84% 4.9%;
+    --card-foreground-dark: 210 40% 98%;
 
     --popover: 0 0% 100%;
+    --popover-dark: 222.2 84% 4.9%;
     --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground-dark: 210 40% 98%;
 
-    --primary: 336 100% 71%;
+    --primary: 346.8 100% 70.8%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 100% 76%;
+    --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
+    --muted-dark: 217.2 32.6% 17.5%;
     --muted-foreground: 215.4 16.3% 46.9%;
+    --muted-foreground-dark: 215 20.2% 65.1%;
 
-    --accent: 336 100% 71%;
+    --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,7 +41,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 336 100% 71%;
+    --ring: 346.8 100% 70.8%;
 
     --radius: 0.5rem;
 
@@ -46,6 +53,23 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: var(--background-dark);
+    --foreground: var(--foreground-dark);
+
+    --card: var(--card-dark);
+    --card-foreground: var(--card-foreground-dark);
+
+    --popover: var(--popover-dark);
+    --popover-foreground: var(--popover-foreground-dark);
+
+    --muted: var(--muted-dark);
+    --muted-foreground: var(--muted-foreground-dark);
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
   }
 
   * {
@@ -66,19 +90,45 @@
   }
 
   .section-heading {
-    @apply text-3xl md:text-4xl font-display font-bold mb-6 text-azul-dark;
+    @apply text-3xl md:text-4xl font-display font-bold mb-6 text-azul-dark dark:text-white;
   }
 
   .section-subheading {
-    @apply text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto;
+    @apply text-lg md:text-xl text-gray-600 dark:text-gray-200 mb-12 max-w-2xl mx-auto;
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white dark:bg-gray-800;
   }
 
   .section-padding {
     @apply py-16 md:py-24;
+  }
+
+  /* Form styles */
+  .form-input {
+    @apply bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-azul-primary;
+  }
+
+  .form-label {
+    @apply block text-gray-700 dark:text-gray-200 font-medium mb-2;
+  }
+
+  .form-container {
+    @apply bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md;
+  }
+
+  /* Program card styles */
+  .program-card {
+    @apply bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg;
+  }
+
+  .program-title {
+    @apply text-xl font-bold text-gray-800 dark:text-white mb-3;
+  }
+
+  .program-description {
+    @apply text-gray-600 dark:text-gray-200;
   }
 
   /* Animation classes */

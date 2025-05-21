@@ -2,11 +2,11 @@ import React from 'react';
 
 const TestimonialCard = ({ quote, author, role }) => {
   return (
-    <div className="bg-white rounded-xl shadow-md p-6 card-hover">
-      <p className="text-gray-600 mb-4 text-lg whitespace-pre-line">{quote}</p>
+    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 card-hover">
+      <p className="text-gray-600 dark:text-gray-300 mb-4 text-lg whitespace-pre-line">{quote}</p>
       <div className="text-right">
-        <p className="font-semibold text-azul-dark">{author}</p>
-        <p className="text-gray-500 text-sm">{role}</p>
+        <p className="font-semibold text-azul-dark dark:text-white">{author}</p>
+        <p className="text-gray-500 dark:text-gray-400 text-sm">{role}</p>
       </div>
     </div>
   );
@@ -14,11 +14,11 @@ const TestimonialCard = ({ quote, author, role }) => {
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="section-padding">
+    <section id="testimonials" className="section-padding dark:bg-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="section-heading">המלצות</h2>
-          <p className="section-subheading">
+          <h2 className="section-heading dark:text-white">המלצות</h2>
+          <p className="section-subheading dark:text-gray-300">
             מה אומרים על דן והשיעורים שלו
           </p>
         </div>
