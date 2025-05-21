@@ -24,14 +24,16 @@ const Navbar = () => {
     <nav 
       className={cn(
         "fixed w-full z-50 transition-all duration-300 bg-white dark:bg-gray-900",
-        isScrolled ? "shadow-md py-2" : "py-4"
+        isScrolled 
+          ? "shadow-md py-2 md:py-2" 
+          : "py-2 md:py-4"
       )}
     >
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-3 md:px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Scissors className="h-8 w-8 text-azul-primary" />
-            <span className="mr-4 text-2xl font-bold font-display text-azul-primary">
+            <Scissors className="h-6 w-6 md:h-8 md:w-8 text-azul-primary" />
+            <span className="mr-2 md:mr-4 text-xl md:text-2xl font-bold font-display text-azul-primary">
               פינק ברבר
             </span>
           </div>
@@ -47,13 +49,13 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-reverse-4">
+          <div className="md:hidden flex items-center space-x-reverse-2 md:space-x-reverse-4">
             <button 
               className="text-azul-primary"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <svg 
-                className="w-6 h-6" 
+                className="w-5 h-5 md:w-6 md:h-6" 
                 fill="none" 
                 stroke="currentColor" 
                 viewBox="0 0 24 24" 
@@ -72,12 +74,12 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white dark:bg-gray-900 mt-4 py-4 px-2 rounded-lg shadow-lg animate-fade-in">
-            <a href="#programs" className="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:bg-azul-primary hover:text-white rounded-md">תוכניות</a>
-            <a href="#why-us" className="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:bg-azul-primary hover:text-white rounded-md">למה אנחנו</a>
-            <a href="#instructors" className="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:bg-azul-primary hover:text-white rounded-md">היכרות</a>
-            <a href="#testimonials" className="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:bg-azul-primary hover:text-white rounded-md">המלצות</a>
-            <a href="#contact" className="block py-2 px-4 mt-2 bg-azul-primary text-white text-center rounded-md">צור קשר</a>
+          <div className="md:hidden bg-white dark:bg-gray-900 mt-2 py-3 px-2 rounded-lg shadow-lg animate-fade-in">
+            <a href="#programs" className="block py-2 px-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-azul-primary hover:text-white rounded-md">תוכניות</a>
+            <a href="#why-us" className="block py-2 px-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-azul-primary hover:text-white rounded-md">למה אנחנו</a>
+            <a href="#instructors" className="block py-2 px-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-azul-primary hover:text-white rounded-md">היכרות</a>
+            <a href="#testimonials" className="block py-2 px-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-azul-primary hover:text-white rounded-md">המלצות</a>
+            <a href="#contact" className="block py-2 px-3 mt-2 text-sm bg-azul-primary text-white text-center rounded-md">צור קשר</a>
           </div>
         )}
       </div>
