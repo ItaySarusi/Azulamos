@@ -16,7 +16,7 @@ const Hero = () => {
               עיצוב הדור הבא של הספרים
             </h1>
             <p className="text-lg md:text-xl mb-8 text-yellow-light opacity-90 max-w-lg animate-fade-in animate-pulse-slow" style={{ animationDelay: '0.2s' }}>
-              בפינק ברבר, נלמד אותך את אמנות ומיומנות הספרות באווירה מהנה ותומכת. בוא תהפוך את החלום שלך למקצוע.
+              גם אתה רוצה להרוויח כסף מגיל צעיר ולהגשים חלום? בוא תהפוך את החלום שלך למקצוע !
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <a href="#programs" className="btn-secondary">

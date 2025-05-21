@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Instagram, Facebook } from 'lucide-react';
+import danImage from '../assets/images/dan.jpeg';
 
 const InstructorCard = ({ name, title, bio, image }) => {
   return (
@@ -43,32 +43,18 @@ const Instructors = () => {
     <section id="instructors" className="section-padding">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="section-heading">הכירו את המדריכים שלנו</h2>
+          <h2 className="section-heading">הפינק ברבר</h2>
           <p className="section-subheading">
-            הצוות שלנו של ספרים מנוסים להוטים ללמד את הדור הבא
+            ממקצוען יכולים לצאת רק מקצוענים.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <InstructorCard 
-            name="מרקוס כהן"
-            title="מדריך ראשי"
-            bio="עם 15 שנות ניסיון בספרות ו-7 שנים בהוראה, מרקוס מתמחה ביצירת סביבת למידה כיפית לילדים."
-            image="https://images.unsplash.com/photo-1618149103124-8296f926447b?auto=format&fit=crop&q=80"
-          />
-          
-          <InstructorCard 
-            name="סופיה רודריגז"
-            title="מנהלת תוכנית הנוער"
-            bio="ספרית מומחית עם ניסיון בעבודה עם ילדים, סופיה מפתחת את תוכנית הלימודים שלנו כדי שתהיה מעניינת וחינוכית לכל הגילאים."
-            image="https://images.unsplash.com/photo-1620794108219-aedbaded4eea?auto=format&fit=crop&q=80"
-          />
-          
-          <InstructorCard 
-            name="דוד חן"
-            title="מומחה טכני"
-            bio="דוד מצטיין בהוראת חיתוך מדויק ועיצובים. הגישה הסבלנית שלו הופכת טכניקות מורכבות לנגישות ללומדים צעירים."
-            image="https://images.unsplash.com/photo-1599032909756-5deb82fea3b0?auto=format&fit=crop&q=80"
+            name="דן אזולאי"
+            title="פינק ברבר"
+            bio="ספר בעל ניסיון של שנים, מורה עם ניסיון בהוראה, מומחה בדירוגים וגזירות"
+            image={danImage}
           />
         </div>
       </div>
