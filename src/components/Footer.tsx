@@ -14,27 +14,15 @@ const Footer = () => {
             <p className="mb-4 text-gray-300">
               מעצימים את הדור הבא של ספרים באמצעות תוכניות מהנות, חינוכיות ומעשיות המותאמות במיוחד לילדים.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex justify-center space-x-6">
               <a 
-                href="#" 
-                className="text-gray-300 hover:text-yellow-primary transition-colors"
-                aria-label="אינסטגרם"
+                href="https://www.instagram.com/_pinkbarber"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-azul-primary transition-colors"
+                aria-label="עקבו אחרינו באינסטגרם"
               >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a 
-                href="#" 
-                className="text-gray-300 hover:text-yellow-primary transition-colors"
-                aria-label="פייסבוק"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a 
-                href="#" 
-                className="text-gray-300 hover:text-yellow-primary transition-colors"
-                aria-label="טוויטר"
-              >
-                <Twitter className="h-5 w-5" />
+                <Instagram className="h-6 w-6" />
               </a>
             </div>
           </div>

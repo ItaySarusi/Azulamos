@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Scissors className="h-8 w-8 text-azul-primary" />
-            <span className="ml-2 text-2xl font-bold font-display text-azul-primary">
+            <span className="mr-4 text-2xl font-bold font-display text-azul-primary">
               פינק ברבר
             </span>
           </div>

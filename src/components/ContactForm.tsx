@@ -27,21 +27,41 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "ההודעה נשלחה!",
-        description: "קיבלנו את פנייתך ונחזור אליך בהקדם.",
-      });
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        childAge: '',
-        message: ''
-      });
-      setIsSubmitting(false);
-    }, 1500);
+    // Format the message for WhatsApp
+    const whatsappMessage = `הודעה חדשה מהאתר:
+    
+שם: ${formData.name}
+דוא״ל: ${formData.email}
+טלפון: ${formData.phone}
+גיל הילד/ה: ${formData.childAge}
+
+הודעה:
+${formData.message}`;
+
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // Create WhatsApp URL (replace with the actual phone number)
+    const whatsappUrl = `https://wa.me/972501234567?text=${encodedMessage}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
+    
+    // Show success message
+    toast({
+      title: "ההודעה נשלחה!",
+      description: "פתחנו את וואטסאפ עבורך עם כל הפרטים.",
+    });
+    
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      childAge: '',
+      message: ''
+    });
+    setIsSubmitting(false);
   };
 
   return (

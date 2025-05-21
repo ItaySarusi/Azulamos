@@ -15,8 +15,9 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 animate-fade-in animate-float">
               עיצוב הדור הבא של הספרים
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-yellow-light opacity-90 max-w-lg animate-fade-in animate-pulse-slow" style={{ animationDelay: '0.2s' }}>
-              גם אתה רוצה להרוויח כסף מגיל צעיר ולהגשים חלום? בוא תהפוך את החלום שלך למקצוע !
+            <p className="text-xl md:text-2xl mb-8 text-white font-medium max-w-lg animate-fade-in animate-pulse-slow leading-relaxed" style={{ animationDelay: '0.2s' }}>
+              גם אתה רוצה להרוויח כסף מגיל צעיר ולהגשים חלום?<br />
+              <span className="text-yellow-light font-semibold">בוא תהפוך את החלום שלך למקצוע !</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <a href="#programs" className="btn-secondary">
