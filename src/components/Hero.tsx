@@ -72,7 +72,7 @@ const Hero = () => {
           aria-label="גלול למטה לחלק התוכניות"
         >
           <svg 
-            className="h-10 w-10 transform rotate-180" 
+            className="h-10 w-10" 
             fill="none" 
             stroke="currentColor" 
             viewBox="0 0 24 24" 

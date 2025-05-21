@@ -39,7 +39,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-reverse-8">
             <a href="#programs" className="text-gray-700 hover:text-azul-primary font-medium ml-8">תוכניות</a>
             <a href="#why-us" className="text-gray-700 hover:text-azul-primary font-medium ml-8">למה אנחנו</a>
-            <a href="#instructors" className="text-gray-700 hover:text-azul-primary font-medium ml-8">הצוות שלנו</a>
+            <a href="#instructors" className="text-gray-700 hover:text-azul-primary font-medium ml-8">היכרות</a>
             <a href="#testimonials" className="text-gray-700 hover:text-azul-primary font-medium ml-8">המלצות</a>
             <a href="#contact" className="btn-primary">צור קשר</a>
           </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
           <div className="md:hidden bg-white mt-4 py-4 px-2 rounded-lg shadow-lg animate-fade-in">
             <a href="#programs" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">תוכניות</a>
             <a href="#why-us" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">למה אנחנו</a>
-            <a href="#instructors" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">הצוות שלנו</a>
+            <a href="#instructors" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">היכרות</a>
             <a href="#testimonials" className="block py-2 px-4 text-gray-700 hover:bg-azul-primary hover:text-white rounded-md">המלצות</a>
             <a href="#contact" className="block py-2 px-4 mt-2 bg-azul-primary text-white text-center rounded-md">צור קשר</a>
           </div>
