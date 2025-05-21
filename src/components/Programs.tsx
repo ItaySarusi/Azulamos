@@ -53,7 +53,7 @@ const Programs = () => {
         <div className="text-center mb-12">
           <h2 className="section-heading">התוכנית שלנו</h2>
           <p className="section-subheading">
-            אנו מציעים תוכניות ספרות מיוחדות המיועדות לקבוצות גיל ורמות מיומנות שונות
+            בחירה בין תוכניות ספרות מיוחדות המיועדות לקבוצות גיל ורמות מיומנות שונות
           </p>
         </div>
         

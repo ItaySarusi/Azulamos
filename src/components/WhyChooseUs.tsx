@@ -22,7 +22,7 @@ const WhyChooseUs = () => {
         <div className="text-center mb-12">
           <h2 className="section-heading">למה לבחור בפינק ברבר</h2>
           <p className="section-subheading">
-            אנחנו לא רק מלמדים מיומנות - אנחנו בונים ביטחון, יצירתיות ומקצועיות עתידית
+            פה לא רק תלמדו מיומנות - אנחנו בונים ביטחון, יצירתיות ומקצועיות עתידית
           </p>
         </div>
         
@@ -40,20 +40,20 @@ const WhyChooseUs = () => {
           />
           
           <FeatureCard 
-            title="מדריכים מוסמכים"
-            description="כל המורים שלנו הם ספרים מורשים עם ניסיון בחינוך ובעבודה עם ילדים ובני נוער."
+            title="יש על מי לסמוך"
+            description="המורה שתקבל יהיה ספר עם הרבה ניסיון ותוצאות, שיודע גם ללמד, מעבר לזה שהוא מקצוען."
             number="3"
           />
           
           <FeatureCard 
             title="כיתות קטנות"
-            description="אנו שומרים על יחס נמוך של תלמידים למורה כדי להבטיח שכל תלמיד יקבל תשומת לב והדרכה אישית."
+            description="אצלנו שומרים על יחס נמוך של תלמידים למורה כדי להבטיח שכל תלמיד יקבל תשומת לב והדרכה אישית."
             number="4"
           />
           
           <FeatureCard 
             title="ביטוי יצירתי"
-            description="אנו מעודדים יצירתיות וביטוי עצמי דרך ספרות, עוזרים לתלמידים לפתח את הסגנון הייחודי שלהם."
+            description="אנחנו מעודדים יצירתיות וביטוי עצמי דרך ספרות, עוזרים לתלמידים לפתח את הסגנון הייחודי שלהם."
             number="5"
           />
           
@@ -65,10 +65,10 @@ const WhyChooseUs = () => {
         </div>
         
         <div className="mt-16 bg-azul-primary rounded-xl p-8 md:p-10 text-white text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4 font-display">מוכנים להתחיל את מסע הספרות של ילדכם?</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 font-display">מוכנים להתחיל את מסע הספרות שלכם?</h3>
           <p className="mb-6 text-lg opacity-90 max-w-2xl mx-auto">
             התוכניות שלנו מתמלאות במהירות.<br />
-            צרו קשר עוד היום כדי לתאם סיור במתקן שלנו וללמוד עוד על תהליך ההרשמה.
+            צרו קשר עוד היום כדי לתאם סיור  אצלנו וללמוד עוד על תהליך ההרשמה.
           </p>
           <a href="#contact" className="btn-secondary">
             התחילו עוד היום
